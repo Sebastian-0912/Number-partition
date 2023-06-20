@@ -30,9 +30,9 @@ for temperature in t:
 
 #plot_generate
 plt.plot(t,minset)
-plt.title('DiffInitemprature_plot & coolingrate=0.9999')
+plt.title('DiffInitemprature_plot & coolingrate=0.99')
 plt.xlabel('Initial temprature', fontsize=16)
 plt.ylabel('cost', fontsize=16)
 plt.grid()
-plt.savefig('DiffInitemprature_plot & coolingrate=0.9999.png')
+plt.savefig('DiffInitemprature_plot & coolingrate=0.99.png')
 plt.show()
