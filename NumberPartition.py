@@ -1,9 +1,8 @@
 import random
 import numpy as np
 
-# 生成隨機整數列表
+# 生成隨機整數列表 (可供使用，但並未使用到)
 def random_array_generator(size):
-    random.seed(1)
     random_list = [random.randint(1, 1000) for _ in range(size)]
     return random_list
 
@@ -11,7 +10,7 @@ def random_array_generator(size):
 def cost_function(set1, set2):
     return abs(sum(set1) - sum(set2))
 
-def number_partitioning(numbers):
+def number_partitioning(numbers, initial_temperature=10000, min_temperature=0.1, cooling_rate=0.9999, max_iterations=1000000):
     random.seed(1)
     # 初始化解
     set1 = np.zeros(len(numbers),dtype=int)
@@ -19,14 +18,6 @@ def number_partitioning(numbers):
     setindex = np.zeros(len(numbers),dtype=bool)
 
     # 定義初始溫度和冷卻率
-    initial_temperature = 10000
-    cooling_rate = 0.9999
-
-    # 定義停止條件
-    min_temperature = 0.1
-    max_iterations = 10000000
-
-    # 初始溫度
     temperature = initial_temperature
 
     # 隨機分配數字到兩個集合(new)    
@@ -61,6 +52,6 @@ def number_partitioning(numbers):
         temperature *= cooling_rate
         if temperature < min_temperature:
             break
-
+        
     # 返回最佳解
     return set1, set2, ans
