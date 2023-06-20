@@ -25,4 +25,3 @@ plt.ylabel('cost', fontsize=16)
 plt.grid()
 plt.savefig('DiffInitemprature_plot.png')
 plt.show()
-
