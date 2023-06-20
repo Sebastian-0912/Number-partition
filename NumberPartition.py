@@ -64,13 +64,3 @@ def number_partitioning(numbers):
 
     # 返回最佳解
     return set1, set2, ans
-
-
-# 測試
-numbers = [443, 552, 217, 319, 3, 708, 756, 342, 669, 133, 984, 405, 718, 105, 553, 66, 877, 705, 924, 654]#random_array_generator(20)
-set1, set2 ,min= number_partitioning(numbers)
-print("array=",numbers)
-print("Set 1:", set1)
-print("Set 2:", set2)
-print("Cost:", sum(set1)-sum(set2))
-# print("Cost:", min)
