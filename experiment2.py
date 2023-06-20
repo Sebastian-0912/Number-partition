@@ -1,3 +1,14 @@
+# Copyright (c) 2023 by Sebastian All Rights Reserved */
+#    NAME
+#      experiment2.py
+#    PURPOSE
+     
+#    NOTES
+     
+#    AUTHOR
+#      Sebastian (kevin1111006@gmail.com)
+#    HISTORY
+#      Sebastian - Jun 20, 2023: Created.
 import NumberPartition as num
 import numpy as np
 import matplotlib.pyplot as plt
