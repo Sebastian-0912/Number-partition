@@ -9,9 +9,20 @@ index=0
 numbers = [443, 552, 217, 319, 3, 708, 756, 342, 669, 133, 984, 405, 718, 105, 553, 66, 877, 705, 924, 654]
 for temperature in range(1000,101000,1000):
     set1[index], set2[index] ,minset[index]= num.number_partitioning(numbers, initial_temperature=temperature, max_iterations=100000000)
-    print(f"when T={temperature}:")
-    print("array=",numbers)
-    print("Set 1:", set1[index])
-    print("Set 2:", set2[index])
-    print("Cost:", minset[index],"\n")
+    # print(f"when T={temperature}:")
+    # print("array=",numbers)
+    # print("Set 1:", set1[index])
+    # print("Set 2:", set2[index])
+    # print("Cost:", minset[index],"\n")
     index+=1
+
+#plot_generate
+t = np.linspace(1000,101000,100)
+plt.plot(t,minset)
+plt.title('DiffInitemprature_plot')
+plt.xlabel('Initial temprature', fontsize=16)
+plt.ylabel('cost', fontsize=16)
+plt.grid()
+plt.savefig('DiffInitemprature_plot.png')
+plt.show()
+
