@@ -1,6 +1,6 @@
 # Copyright (c) 2023 by Sebastian All Rights Reserved */
 #    NAME
-#      NumberPartition.py
+#      NumberPartitionQubo.py
 #    PURPOSE
      
 #    NOTES
