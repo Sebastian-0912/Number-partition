@@ -13,8 +13,8 @@ import NumberPartitionQubo as num
 import numpy as np
 import matplotlib.pyplot as plt
 
-size_arr=np.arange(20,200,10)
-minset=np.zeros(len(size_arr),dtype=int)
+size_arr=np.arange(20,200,5)
+minset=np.zeros(len(size_arr),dtype=np.int64)
 index=0
 for size in size_arr:
     numbers=num.random_array_generator(size)

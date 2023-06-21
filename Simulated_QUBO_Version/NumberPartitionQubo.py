@@ -23,7 +23,7 @@ def random_array_generator(size):
 def QUBO(numbers):
     size=len(numbers)
     constant=sum(numbers)
-    qubo=np.zeros((size,size),dtype=int)
+    qubo=np.zeros((size,size),dtype=np.int64)
     for i in range(0,size):
         for j in range(0,size):
             if i==j:
