@@ -13,7 +13,7 @@ import NumberPartitionQubo as num
 import numpy as np
 import matplotlib.pyplot as plt
 
-size_arr=np.arange(20,200,5)
+size_arr=np.arange(20,300,5)
 minset=np.zeros(len(size_arr),dtype=np.int64)
 index=0
 for size in size_arr:
