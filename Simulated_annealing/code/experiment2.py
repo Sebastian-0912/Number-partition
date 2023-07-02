@@ -31,7 +31,7 @@ for cooling in cool:
 #plot_generate
 plt.plot(cool,minset)
 plt.title('DiffInitemprature_plot')
-plt.xlabel('Initial temprature', fontsize=16)
+plt.xlabel('cooling rate', fontsize=16)
 plt.ylabel('cost', fontsize=16)
 plt.grid()
 plt.savefig('DiffCoolingRate_plot.png')
