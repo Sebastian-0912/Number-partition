@@ -48,27 +48,17 @@ This project provides:
     python simulated_annealing.py <path_to_your_dataset>
     ```
 
-3. The results, including the partitions and the objective value, will be displayed in the console.
+3. The results, including the partitions and the objective value, will be displayed in the console or log.txt.
 
 ## Example
 
-1. Create a file `numbers.txt` with the following content:
-
-    ```plaintext
-    10
-    20
-    15
-    5
-    25
-    ```
-
-2. Run the algorithm:
+1. Run the algorithm:
 
     ```bash
-    python simulated_annealing.py numbers.txt
+    python -u experiment1.py > log.txt
     ```
 
-3. Sample output:
+2. Sample output:
 
     ```plaintext
     Partition 1: [10, 25]
