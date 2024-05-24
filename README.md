@@ -28,18 +28,11 @@ This project provides:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Sebastian-0912/Number-partition-problem.git
-    cd Number-partition-problem
+    git clone git@github.com:Sebastian-0912/Number-partition.git
+    cd Number-partition
     ```
 
-2. Set up a virtual environment (optional but recommended):
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3. Install the required dependencies:
+2. Install the required dependencies:
 
     ```bash
     pip install -r requirements.txt
@@ -85,7 +78,7 @@ This project provides:
 
 ## Acknowledgements
 
-This project is inspired by the need to solve combinatorial optimization problems using advanced algorithms. Special thanks to the developers and researchers who have contributed to the field of optimization and quantum computing.
+This project is inspired by the need to solve combinatorial optimization problems using advanced algorithms. Special thanks to the developers and researchers who have contributed to the field of optimization and quantum computing. Additionally, I would like to express my gratitude to Professor Hsiu-Chuan Hsu for their guidance and support throughout this project.
 
 ## License
 
